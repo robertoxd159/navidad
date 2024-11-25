@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Navidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Feliz Navidad!</h1>
+        <p>Haz clic en el botón para ver tu invitación navideña y escuchar una canción especial.</p>
+        
+        <!-- Botón para mostrar la invitación y reproducir la música -->
+        <button onclick="mostrarInvitacion()">Ver Invitación</button>
+        
+        <!-- Contenedor de la invitación, inicialmente oculto -->
+        <div id="invitacion" class="invitacion">
+            <h2>Estás invitado a celebrar la Navidad con nosotros</h2>
+            <p>Será una noche llena de alegría, amor y magia. ¡No faltes!</p>
+        </div>
+        
+        <!-- Música navideña -->
+        <audio id="cancionNavidad" preload="auto">
+            <source src="https://www.youtube.com/watch?v=dlHEbuhfjYo" type="audio/mp3">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
